@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /vendor/
 node_modules/
 npm-debug.log
@@ -56,4 +55,3 @@ yarn-error.log
 /public/fileholder/img/*.jpeg
 /public/fileholder/img/*.webp
 /public/fileholder/img/*.png
->>>>>>> 502d566 (init)
