@@ -1,0 +1,307 @@
+.banner-section{
+    padding-top: 180px;
+    padding-bottom: 180px;
+    overflow: hidden;
+    @media only screen and (max-width: 1600px) {
+      padding-top: 150px;
+      padding-bottom: 140px;
+    }
+    @media only screen and (max-width: 991px) {
+      padding-top: 110px;
+      padding-bottom: 110px;
+    }
+    @media only screen and (max-width: 575px) {
+      padding-top: 80px;
+      padding-bottom: 50px;
+    }
+    @media only screen and (max-width: 425px) {
+      padding-top:50px;
+      padding-bottom: 50px;
+    }
+    .banner-content{
+        padding-right: 20px;
+        @media only screen and (max-width: 768px) {
+          padding-right: 0px;
+        }
+    }
+}
+.banner-img{
+  position: relative;
+  width: 800px;
+  padding-top: 250px;
+  @media only screen and (max-width: 1600px) {
+    width: 700px;
+  }
+  @media only screen and (max-width: 1400px) {
+    width: 630px;
+    padding-top: 150px;
+  }
+  @media only screen and (max-width: 1300px) {
+    width: 550px;
+  }
+  @media only screen and (max-width: 1199px) {
+    width: 500px;
+  }
+  @media only screen and (max-width: 991px) {
+    width: 700px;
+    padding-top: 200px;
+  }
+  @media only screen and (max-width: 768px) {
+    width: 550px;
+    padding-top: 200px;
+  }
+  @media only screen and (max-width: 540px) {
+    width: 500px;
+    padding-top: 200px;
+    padding-left: 0px;
+  }
+  @media only screen and (max-width: 480px) {
+    width: 450px;
+    padding-top: 170px;
+    padding-left: 0px;
+  }
+  @media only screen and (max-width: 440px) {
+    width: 400px;
+    padding-top: 170px;
+    padding-left: 0px;
+  }
+  @media only screen and (max-width: 400px) {
+    width: 350px;
+    padding-top: 160px;
+    padding-left: 0px;
+  }
+  @media only screen and (max-width: 350px) {
+    width: 320px;
+    padding-top: 160px;
+    padding-left: 0px;
+  }
+  @media only screen and (max-width: 320px) {
+    width: 310px;
+    padding-top: 150px;
+    padding-left: 0px;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  .banner-inner-img{
+    position: absolute;
+    top: -40px;
+    left: 50px;
+    width: 700px;
+    @media only screen and (max-width: 1600px) {
+      width: 650px;
+      top: -30px;
+      left: 30px;
+    }
+    @media only screen and (max-width: 1400px) {
+      width: 600px;
+      top: -117px;
+      left: 20px;
+    }
+    @media only screen and (max-width: 1300px) {
+      width: 500px;
+      top: -70px;
+      left: 20px;
+    }
+    @media only screen and (max-width: 1199px) {
+      width: 450px;
+      top: -45px;
+      left: 20px;
+    }
+    @media only screen and (max-width: 991px) {
+      width: 650px;
+      top: -80px;
+      left: 30px;
+    }
+    @media only screen and (max-width: 778px) {
+      width: 500px;
+      top: -20px;
+      left: 30px;
+    }
+    @media only screen and (max-width: 540px) {
+      width: 450px;
+      top: 5px;
+      left: 30px;
+    }
+    @media only screen and (max-width: 480px) {
+      width: 400px;
+      top: -5px;
+      left: 30px;
+    }
+    @media only screen and (max-width: 440px) {
+      width: 350px;
+      top: 20px;
+      left: 30px;
+    }
+    @media only screen and (max-width: 400px) {
+      width: 300px;
+      top: 33px;
+      left: 30px;
+    }
+    @media only screen and (max-width: 350px) {
+      width: 280px;
+      top: 40px;
+      left: 30px;
+    }
+    @media only screen and (max-width: 320px) {
+      width: 270px;
+      top: 30px;
+      left: 25px;
+    }
+  }
+}
+.banner-content{
+  .title{
+    padding-bottom: 20px
+  }
+  p{
+    padding-bottom: 30px;
+  }
+}
+
+
+
+
+
+
+
+.banner-flotting-section {
+    margin-top: -50px;
+  }
+  
+  .banner-flotting-section.home {
+    margin-top: 0;
+  }
+  
+  .banner-flotting-section.home .banner-flotting-item {
+    border: 1px solid $border--base;
+  }
+  
+  .banner-flotting-item {
+    position: relative;
+    z-index: 2;
+    background-color: $section--bg;
+    padding: 30px;
+    border-radius: 15px;
+  }
+  
+  .banner-flotting-item .banner-flotting-item-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -5px;
+  }
+  
+  .banner-flotting-item .banner-flotting-item-form .form-group {
+    position: relative;
+    -webkit-box-flex: 0;
+    flex: 0 0 30%;
+    margin: 5px;
+  }
+  
+  @media only screen and (max-width: 1199px) {
+    .banner-flotting-item .banner-flotting-item-form .form-group {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 32%;
+              flex: 0 0 32%;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .banner-flotting-item .banner-flotting-item-form .form-group {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 48%;
+              flex: 0 0 48%;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .banner-flotting-item .banner-flotting-item-form .form-group {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+    }
+  }
+  .banner-flotting-item .banner-flotting-item-form .form-group.single {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 74%;
+            flex: 0 0 74%;
+  }
+  
+  .banner-flotting-item .banner-flotting-item-form .form-group.btn-search {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 24%;
+            flex: 0 0 24%;
+  }
+  
+  .banner-flotting-item .banner-flotting-item-form .form-group .search-btn {
+    padding: 12px 25px;
+  }
+  
+  .banner-flotting-item .banner-flotting-item-form .form-group input {
+    caret-color: #cca876;
+  }
+  
+  .banner-flotting-item .banner-flotting-item-form .dr-name i {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    font-size: 12px;
+  }
+  
+  .banner-flotting-item .banner-flotting-item-form .dr-name input {
+    padding-left: 40px;
+  }
+
+.img-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.img360 img {
+    transition: transform 0.9s ease-in-out; /* Adjust the transition speed here */
+}
+
+// vendorlanding-section
+.vendorlanding-section{
+   padding-top: 120px;
+   padding-bottom: 150px;
+   @media only screen and (max-width: 480px) {
+    padding-top: 80px;
+  }
+   .banner-content{
+    color: $white;
+    text-align: center;
+
+      .title{
+        color: $white;
+      }
+      .title-paragraph{
+        @media only screen and (max-width: 480px) {
+          font-size: 14px;
+        }
+      }
+      .banner-btn{
+        i{
+          font-size: 30px;
+          position: relative;
+          top: 5px;
+          margin-left: 5px;
+        }
+        .btn--base{
+          font-size: 18px;
+        }
+      }
+      .login-loction{
+        margin-top: 15px;
+        a{
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+   }
+}
