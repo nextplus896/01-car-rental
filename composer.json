@@ -5,7 +5,7 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": ">=8.2",
+        "php": ">=8.3",
         "buglinjo/laravel-webp": "^2.3",
         "guzzlehttp/guzzle": "^7.2",
         "intervention/image": "^2.7",
