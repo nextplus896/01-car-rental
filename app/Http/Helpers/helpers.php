@@ -1688,7 +1688,7 @@ function google_two_factor_verification_vendor_template($user)
 
 function files_asset_path_basename($slug)
 {
-    return "public/" . files_path($slug)->path;
+    return "/" . files_path($slug)->path;
 }
 
 function get_only_numeric_data($string)
