@@ -453,7 +453,7 @@ function files_path($slug)
 function files_asset_path($slug)
 {
     $files_path = files_path($slug)->path;
-    return asset('/' . $files_path);
+    return asset('/' . $files_path,true);
 }
 
 function get_amount($amount, $currency = null, $precision = null)
