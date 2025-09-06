@@ -332,7 +332,7 @@ function get_files_path($slug)
 
 function create_asset_dir($path)
 {
-    $path = "public/" . $path;
+    $path = "" . $path;
     if (file_exists($path)) return true;
     return mkdir($path, 0755, true);
 }

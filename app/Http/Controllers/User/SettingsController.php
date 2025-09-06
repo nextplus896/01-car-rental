@@ -46,7 +46,7 @@ class SettingsController extends Controller
         if ($request->hasfile('image')) {
             $image = $request->file('image');
             $imageName  = Str::uuid() . '.' . $image->getClientOriginalExtension();
-            create_dir('public/frontend/user');
+            create_dir('frontend/user');
             delete_file(get_files_path('user-profile').'/'. $user->image);
             Image::make($image)->resize(200, 200)->save(get_files_path('user-profile').'/'. $imageName);
         } else {

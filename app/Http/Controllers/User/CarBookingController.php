@@ -710,7 +710,7 @@ class CarBookingController extends Controller
 
         foreach ($transaction->details->input_values as $key => $value) {
             if ($value->type == 'file') {
-                unlink('public/transaction/' . $value->value);
+                unlink('transaction/' . $value->value);
             }
         }
         DB::beginTransaction();

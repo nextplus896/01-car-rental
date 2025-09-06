@@ -59,7 +59,7 @@ $default_lng = 'en';
             } else {
                 currentImageIndex = (currentImageIndex === 1) ? totalImages : currentImageIndex - 1;
             }
-            img.src = `public/frontend/images/car/car-${currentImageIndex}.webp`;
+            img.src = `frontend/images/car/car-${currentImageIndex}.webp`;
         }
 
         function toggleDirection() {
