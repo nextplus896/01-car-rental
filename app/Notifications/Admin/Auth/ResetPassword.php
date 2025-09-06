@@ -53,7 +53,7 @@ class ResetPassword extends Notification
         return (new MailMessage)
                     ->view('mail-templates.admin.auth.password-reset',[
                         'reset_url'         => $reset_url,
-                        'site_url'          => url('/'),
+                        'site_url'          => secure_url('/'),
                         'site_name'         => $basic_settings->site_name ?? "",
                         'logo'              => get_logo_public_path($basic_settings),
                     ]);

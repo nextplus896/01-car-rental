@@ -42,7 +42,7 @@ class ProfileController extends Controller
         ];
 
         $image_paths = [
-            'base_url'          => url("/"),
+            'base_url'          => secure_url("/"),
             'path_location'     => files_asset_path_basename("user-profile"),
             'default_image'     => files_asset_path_basename("profile-default"),
         ];

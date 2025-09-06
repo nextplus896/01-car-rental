@@ -49,7 +49,7 @@ class DashboardController extends Controller
         ]);
 
         $profile_image_paths = [
-            'base_url'          => url("/"),
+            'base_url'          => secure_url("/"),
             'path_location'     => files_asset_path_basename("user-profile"),
             'default_image'     => files_asset_path_basename("profile-default"),
         ];
@@ -88,7 +88,7 @@ class DashboardController extends Controller
             $my_cars = Car::where('vendor_id',auth()->guard('vendor_api')->user()->id)->get();
 
             $car_image_path = [
-                'base_url' => url('/'),
+                'base_url' => secure_url('/'),
                 'image_path' => files_asset_path_basename('site-section'),
             ];
 

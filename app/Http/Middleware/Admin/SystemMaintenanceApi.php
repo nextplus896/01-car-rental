@@ -22,7 +22,7 @@ class SystemMaintenanceApi
         $system_maintenance = AdminSystemMaintenance::first();
         if( $system_maintenance->status == 1){
             $data =[
-                'base_url'      => url("/"),
+                'base_url'      => secure_url("/"),
                 'image_path'    => files_asset_path_basename("error-images"),
                 "image"         => "maintenance-mode.webp",
                 'status'        => $system_maintenance->status,

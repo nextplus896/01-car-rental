@@ -121,7 +121,7 @@ class CarBookingController extends Controller
             })
             ->get();
         $data_path = [
-            'base_url' => url('/'),
+            'base_url' => secure_url('/'),
             'image_path' => files_asset_path_basename('site-section'),
         ];
 
@@ -155,7 +155,7 @@ class CarBookingController extends Controller
             })
             ->get();
         $car_data = [
-            'base_url' => url('/'),
+            'base_url' => secure_url('/'),
             'image_path' => files_asset_path_basename('site-section'),
             'cars' => $cars,
         ];

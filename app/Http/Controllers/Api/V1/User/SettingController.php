@@ -34,7 +34,7 @@ class SettingController extends Controller
         $base_cur->makeHidden(['admin_id','country','name','created_at','updated_at','type','flag','sender','receiver','default','status','editData']);
 
         $app_image_paths = [
-            'base_url'          => url("/"),
+            'base_url'          => secure_url("/"),
             'path_location'     => files_asset_path_basename("app-images"),
             'default_image'     => files_asset_path_basename("default"),
         ];
@@ -53,7 +53,7 @@ class SettingController extends Controller
             'onboard_screens'   => $onboard_screens,
             'vendor_onboard_screens'   => $vendor_onboard_screens,
             'image_paths'       => [
-                'base_path'         => url("/"),
+                'base_path'         => secure_url("/"),
                 'path_location'     => files_asset_path_basename("image-assets"),
                 'default_image'     => files_asset_path_basename("default"),
             ],
@@ -65,7 +65,7 @@ class SettingController extends Controller
         $app_settings = AppSettings::select('splash_screen_image as image','version')->first();
 
         $image_paths = [
-            'base_url'          => url("/"),
+            'base_url'          => secure_url("/"),
             'path_location'     => files_asset_path_basename("app-images"),
             'default_image'     => files_asset_path_basename("default"),
         ];
@@ -81,7 +81,7 @@ class SettingController extends Controller
         $onboard_screens->makeHidden(['editData']);
 
         $image_paths = [
-            'base_url'          => url("/"),
+            'base_url'          => secure_url("/"),
             'path_location'     => files_asset_path_basename("app-images"),
             'default_image'     => files_asset_path_basename("default"),
         ];

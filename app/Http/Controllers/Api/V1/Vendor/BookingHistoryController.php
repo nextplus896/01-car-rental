@@ -24,7 +24,7 @@ class BookingHistoryController extends Controller
         }
 
         $car_image_path = [
-            'base_url' => url('/'),
+            'base_url' => secure_url('/'),
             'image_path' => files_asset_path_basename('site-section'),
         ];
 
