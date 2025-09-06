@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace Project\Installer\Helpers;
 
@@ -29,7 +29,7 @@ class URLHelper {
     }
 
     public function getValidation($version = 'v1') {
-        
+
         if($version == "v2") {
             return $this->convertLayer($this->validationV2());
         }else if($version == "v3") {
@@ -49,7 +49,7 @@ class URLHelper {
 
     public function convertLayer(string $string) {
         $data = "";
-        for ($i=0; $i < $this->layer ; $i++) { 
+        for ($i=0; $i < $this->layer ; $i++) {
             # code...
             if($data == "") {
                 $data = base64_decode($string);
@@ -61,6 +61,6 @@ class URLHelper {
     }
 
     public function base_get() {
-        return url('/');
+        return secure_url('/');
     }
 }

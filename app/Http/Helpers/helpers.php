@@ -1726,7 +1726,7 @@ function get_api_languages(){
  */
 
 function get_full_url_host(){
-    $base_url = url('/');
+    $base_url = secure_url('/');
     $parse_base_url = parse_url($base_url);
     $host = $parse_base_url['host'] ?? "";
     $path = $parse_base_url['path'] ?? "";

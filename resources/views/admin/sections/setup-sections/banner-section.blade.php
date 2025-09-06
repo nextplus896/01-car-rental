@@ -116,7 +116,7 @@
                         <div class="col-xl-12 col-lg-12 form-group">
                             <label for="">{{ __('Button One Link') }}*</label>
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">{{ url('/') }}/</span>
+                                <span class="input-group-text" id="basic-addon1">{{ secure_url('/') }}/</span>
                                 <input type="text" class="form--control" name="button_link_one"
                                     value="{{ old('button_link_one', $data->value->button_link_one ?? '') }}">
                             </div>
@@ -124,7 +124,7 @@
                         <div class="col-xl-12 col-lg-12 form-group">
                             <label for="">{{ __('Button Two Link') }}*</label>
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">{{ url('/') }}/</span>
+                                <span class="input-group-text" id="basic-addon1">{{ secure_url('/') }}/</span>
                                 <input type="text" class="form--control" name="button_link_two"
                                     value="{{ old('button_link_two', $data->value->button_link_two ?? '') }}">
                             </div>
@@ -240,7 +240,7 @@
                         <div class="col-xl-12 col-lg-12 form-group">
                             <label for="">{{ __('Button One Link') }}*</label>
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">{{ url('/') }}/</span>
+                                <span class="input-group-text" id="basic-addon1">{{ secure_url('/') }}/</span>
                                 <input type="text" class="form--control" name="button_link_one"
                                     value="{{ old('button_link_one', $vendor_banner->value->button_link_one ?? '') }}">
                             </div>
@@ -248,7 +248,7 @@
                         <div class="col-xl-12 col-lg-12 form-group">
                             <label for="">{{ __('Button Two Link') }}*</label>
                             <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">{{ url('/') }}/</span>
+                                <span class="input-group-text" id="basic-addon1">{{ secure_url('/') }}/</span>
                                 <input type="text" class="form--control" name="button_link_two"
                                     value="{{ old('button_link_two', $vendor_banner->value->button_link_two ?? '') }}">
                             </div>

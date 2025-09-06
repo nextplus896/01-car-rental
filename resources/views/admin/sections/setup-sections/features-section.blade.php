@@ -137,7 +137,7 @@
                             <div class="form-group">
                                 <label for="">{{ __('Details Button Link') }}*</label>
                                 <div class="input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon1">{{ url('/') }}/</span>
+                                    <span class="input-group-text" id="basic-addon1">{{ secure_url('/') }}/</span>
                                     <input type="text" class="form--control" name="details_button_link"
                                         value="{{ old('details_button_link', $data->value->details_button_link ?? '') }}">
                                 </div>

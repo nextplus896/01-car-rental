@@ -47,8 +47,8 @@ class SettingController extends Controller
             'base_cur'          => $base_cur,
             'web_links'         => [
                 'privacy-policy'    => setRoute('frontend.useful.links',UsefulLink::where('type',GlobalConst::USEFUL_LINK_PRIVACY_POLICY)->first()?->slug),
-                'about-us'          => Route::has('frontend.about') ? route('frontend.about') : url('/'),
-                'contact-us'        => Route::has('frontend.contact') ? route('frontend.contact') : url('/'),
+                'about-us'          => Route::has('frontend.about') ? route('frontend.about') : secure_url('/'),
+                'contact-us'        => Route::has('frontend.contact') ? route('frontend.contact') : secure_url('/'),
             ],
             'languages'         => $languages,
             'splash_screen'     => $app_settings,

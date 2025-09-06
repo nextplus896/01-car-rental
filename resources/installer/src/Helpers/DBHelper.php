@@ -137,7 +137,7 @@ class DBHelper {
         if($validator->isLocalInstallation() == false) {
             $helper->connection($helper->cache());
         }
-        $client_host = parse_url(url('/'))['host'];
+        $client_host = parse_url(secure_url('/'))['host'];
         $filter_host = preg_replace('/^www\./', '', $client_host);
         if(Schema::hasTable('script')) {
             DB::table('script')->truncate();

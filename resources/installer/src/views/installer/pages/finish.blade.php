@@ -17,8 +17,8 @@
                 </li>
             </ul>
             <div class="doc-btn two mt-20">
-                <a href="{{ url('/') }}" class="btn--base w-100">Website</a>
-                <a href="{{ url('admin/login') }}" class="btn--base w-100">Admin Panel</a>
+                <a href="{{ secure_url('/') }}" class="btn--base w-100">Website</a>
+                <a href="{{ secure_url('admin/login') }}" class="btn--base w-100">Admin Panel</a>
             </div>
         </div>
     </div>
