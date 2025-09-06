@@ -137,6 +137,9 @@
     })
 </script>
 
+<script src="{{ asset('frontend/js/file-settings.js') }}"></script>
+
+
 @stack('script')
 
 </body>
