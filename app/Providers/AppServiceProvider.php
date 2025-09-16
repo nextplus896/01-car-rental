@@ -5,6 +5,8 @@ namespace App\Providers;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\APP;
 
 ini_set('memory_limit','-1');
 
@@ -29,5 +31,9 @@ class AppServiceProvider extends ServiceProvider
     {
         Paginator::useBootstrapFive();
         Schema::defaultStringLength(191);
+
+        if ($this->app->environment('production') || App::environment('production')) {
+            URL::forceScheme('https');
+        }
     }
 }
