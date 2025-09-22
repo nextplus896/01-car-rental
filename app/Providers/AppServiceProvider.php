@@ -6,7 +6,7 @@ use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\URL;
-use Illuminate\Support\Facades\APP;
+use Illuminate\Support\Facades\App;
 
 ini_set('memory_limit','-1');
 
